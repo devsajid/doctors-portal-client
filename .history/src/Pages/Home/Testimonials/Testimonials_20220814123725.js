@@ -9,25 +9,22 @@ const Testimonials = () => {
     {
       _id: 1,
       name: "Winson Harry",
-      reviews:
+      review:
         "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content",
-      location: "califonia",
       img: people1,
     },
     {
       _id: 3,
       name: "Winson Harry",
-      reviews:
+      review:
         "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content",
-      location: "califonia",
       img: people3,
     },
     {
       _id: 2,
       name: "Winson Harry",
-      reviews:
+      review:
         "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content",
-      location: "califonia",
       img: people2,
     },
   ];
@@ -55,7 +52,7 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-">
         {reviews.map((review) => (
           <Review key={review._id} review={review}></Review>
         ))}
